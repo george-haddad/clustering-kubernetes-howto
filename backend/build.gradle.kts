@@ -19,6 +19,10 @@ dependencies {
   implementation("ch.qos.logback:logback-classic:1.5.12")
 }
 
+/*
+  JGroups config suitable for testing on local development machine.
+  Use "default-jgroups-kubernetes.xml" when deploying to kubernetes.
+*/
 application {
   applicationDefaultJvmArgs =
     listOf("-Djava.net.preferIPv4Stack=true", "-Dvertx.jgroups.config=default-configs/default-jgroups-udp.xml")

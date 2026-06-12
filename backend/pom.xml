@@ -70,6 +70,9 @@
               <value>true</value>
             </systemProperty>
             <systemProperty>
+              <!-- JGroups config suitable for testing on local development machine.
+                    Use "default-jgroups-kubernetes.xml" when deploying to kubernetes.
+              -->
               <key>vertx.jgroups.config</key>
               <value>default-configs/default-jgroups-udp.xml</value>
             </systemProperty>
